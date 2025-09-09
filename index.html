@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghana Hospital Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#0055A4', // A blue inspired by Ghana's flag colors
+              'primary-dark': '#003B73',
+              'secondary': '#FCD116', // A yellow inspired by Ghana's flag
+              'accent': '#CE1126', // A red inspired by Ghana's flag
+              'success': '#008751', // A green inspired by Ghana's flag
+              'light-bg': '#f0f4f8',
+              'dark-text': '#1e293b',
+              'light-text': '#64748b',
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      @keyframes progress-bar {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+      }
+      .animate-progress-bar {
+        animation: progress-bar 2s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.15.0",
+    "recharts": "https://esm.sh/recharts@^2.12.7"
+  }
+}
+</script>
+</head>
+  <body class="bg-light-bg dark:bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

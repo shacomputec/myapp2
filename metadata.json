@@ -1,0 +1,8 @@
+{
+  "name": "shacomputec-Ghana Hospital Management Syst-prem",
+  "description": "A modern, user-friendly Hospital Management System (HMS) designed to meet the specific needs of Ghanaian healthcare facilities, featuring patient management, a doctor's dashboard, and an AI-powered clinical assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
